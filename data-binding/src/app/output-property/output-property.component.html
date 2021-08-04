@@ -1,0 +1,15 @@
+<div class="d-flex col-6">
+  <button class="btn btn-primary font-weight-bold" (click)="decrement()">
+    -
+  </button>
+  <input
+    class="form-control"
+    type="text"
+    readonly
+    [value]="valor"
+    #campoInput
+  />
+  <button class="btn btn-primary font-weight-bold" (click)="increment()">
+    +
+  </button>
+</div>

@@ -1,0 +1,10 @@
+<!-- <p appFundoAmarelo>Texto com fundo amarelo</p>
+<button appFundoAmarelo>Botão com fundo amarelo</button>
+<br /><br />
+<p [highlight]="'red'" [defaultColor]="'grey'">
+  Testo com highlight quanto passo o mouse.
+</p> -->
+
+<div *ngIf="mostrarCursos">Lista de cursos aqui</div>
+<div *ngElse="mostrarCursos">Não existem cursos para serem listados</div>
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
