@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav *ngIf="mostrarMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" routerLink="">Routes Angular</a>
     <button
@@ -28,12 +28,20 @@
             >Cursos</a
           >
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a
             class="nav-link"
             routerLinkActive="active"
             [routerLink]="['curso', idCurso.value]"
             >Curso com ID</a
+          >
+        </li> -->
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            routerLink="alunos"
+            >Alunos</a
           >
         </li>
       </ul>
@@ -41,7 +49,7 @@
   </div>
 </nav>
 <div class="container mt-5 card p-5">
-  <p>Entre com o id do curso</p>
-  <input type="number" #idCurso />
+  <!-- <p>Entre com o id do curso</p>
+  <input type="number" #idCurso /> -->
   <router-outlet></router-outlet>
 </div>

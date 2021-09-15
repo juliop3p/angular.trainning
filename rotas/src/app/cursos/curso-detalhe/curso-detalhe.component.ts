@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { CursosService } from '../cursos/cursos.service';
+import { CursosService } from '../cursos.service';
 
 @Component({
   selector: 'app-curso-detalhe',
@@ -24,7 +24,7 @@ export class CursoDetalheComponent implements OnInit, OnDestroy {
       this.id = param.id;
       this.curso = this.cursosService.getCursoById(param.id);
 
-      if (this.curso === null) this.router.navigate(['not-found']);
+      if (this.curso === null) this.router.navigate(['/cursos/not-found']);
     });
   }
 
