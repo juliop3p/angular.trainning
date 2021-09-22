@@ -7,7 +7,6 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { MeuPrimeiro2Component } from './meu-primeiro2/meu-primeiro2.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CursosModule } from './cursos/cursos.module';
 
 @NgModule({
   declarations: [AppComponent, MeuPrimeiroComponent, MeuPrimeiro2Component],
@@ -16,7 +15,6 @@ import { CursosModule } from './cursos/cursos.module';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    CursosModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

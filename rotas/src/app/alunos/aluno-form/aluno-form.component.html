@@ -1,12 +1,32 @@
 <form>
   <h4>Criar/Editar Aluno</h4>
   <div class="mb-3">
-    <input disabled type="number" placeholder="#" name="id" [(ngModel)]="aluno.id" class="form-control">
+    <input
+      disabled
+      type="number"
+      placeholder="#"
+      name="id"
+      [(ngModel)]="aluno.id"
+      class="form-control"
+    />
   </div>
   <div class="mb-3">
-    <input type="text" placeholder="Nome" name="nome" [(ngModel)]="aluno.nome" class="form-control">
+    <input
+      type="text"
+      placeholder="Nome"
+      name="nome"
+      [(ngModel)]="aluno.nome"
+      class="form-control"
+      (input)="onInput()"
+    />
   </div>
   <div class="mb-3">
-    <input type="email" placeholder="Email" name="email" [(ngModel)]="aluno.email" class="form-control">
+    <input
+      type="email"
+      placeholder="Email"
+      name="email"
+      [(ngModel)]="aluno.email"
+      class="form-control"
+    />
   </div>
 </form>
